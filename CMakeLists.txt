@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.4.1)
 set(CMAKE_CXX_STANDARD 17)
 # set(CMAKE_C_COMPILER /usr/bin/gcc-8)
 # set(CMAKE_CXX_COMPILER /usr/bin/g++-8)
-set(CMAKE_CXX_FLAGS " ${CMAKE_CXX_FLAGS} -O3 -fopenmp")
+set(CMAKE_CXX_FLAGS " ${CMAKE_CXX_FLAGS} -O3")
 #set(CMAKE_GENERATOR "MinGW Makefiles")
 project(format_conversion)
 

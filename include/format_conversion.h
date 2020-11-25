@@ -28,18 +28,13 @@ float* readSpec(std::string filename, SEGSPEC *head);
 void spec2hdf5(const std::filesystem::path& p);
 void readAllData2Spec(const std::string& filename, std::vector<std::string>* names,
                 std::vector<SEGSPEC*>* heads, std::vector<float* >* data);
-void readData2Spec(const std::string& filename, std::string stationName,
-            std::string locName, int year, int day,
+void readData2Spec(const std::string& filename, const std::string& stationName,
+            const std::string& locName, int year, int day,
             std::string& name,
             SEGSPEC* head, 
             float* data);
 void readAllData2Sac(const std::string& filename, std::vector<std::string>* names,
                 std::vector<SACHEAD*>* heads, std::vector<float* >* data);
-void readData2Sac(const std::string& filename, std::string stationName,
-            std::string locName, int year, int day,
-            std::string& name,
-            SACHEAD* head, 
-            float* data);
 
 file_tree* createFileTree(const std::vector<std::filesystem::path>& filename);
 
