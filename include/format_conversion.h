@@ -28,7 +28,7 @@ float* readSpec(std::string filename, SEGSPEC *head);
 void spec2hdf5(const std::filesystem::path& p);
 void readAllData2Spec(const std::string& filename, std::vector<std::string>* names,
                 std::vector<SEGSPEC*>* heads, std::vector<float* >* data);
-void readData2Spec(const std::string& filename, const std::string& stationName,
+void readData2Spec(const std::string& filename, std::string& stationName,
             const std::string& locName, int year, int day,
             std::string& name,
             SEGSPEC* head, 

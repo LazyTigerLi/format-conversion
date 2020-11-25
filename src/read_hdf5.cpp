@@ -85,7 +85,7 @@ void readAllData2Sac(const std::string& filename, std::vector<std::string>* name
     f.close();
 }
 
-void readData2Spec(const std::string& filename, const std::string& stationName,
+void readData2Spec(const std::string& filename, std::string& stationName,
             const std::string& locName, int year, int day,
             std::string& name,
             SEGSPEC* head, 
